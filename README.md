@@ -1,5 +1,5 @@
 # Formstack Assessment Assignment
-Jenna Rajani - [Formstack Assessment]() - [Portfolio](https://jjrajani.github.io/portfolio)
+Jenna Rajani - [Portfolio](https://jjrajani.github.io/portfolio)
 ___
 ##### Requirements:
 
