@@ -1,0 +1,110 @@
+/* app css stylesheet */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 10px 2vw;
+  height: 12vh;
+}
+
+header > h1 {
+  color: green;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  margin: 0;
+}
+
+a, p, li, h1 {
+  color: #333;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu > li:first-child {
+  margin: 0 3vw 0 0;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.home-page {
+  /*border: solid black 3px;*/
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner {
+  /*border: solid purple 5px;*/
+  width: 100%;
+}
+
+.banner > .container {
+  /*border: solid blue 3px;*/
+}
+
+.banner > .container > p {
+  /*border: solid pink 1px;*/
+}
+
+.container.page {
+  /*border: solid yellow 3px;*/
+}
+
+.container.page > .row {
+  /*border: solid orange 4px;*/
+}
+
+button {
+  background-color: white;
+  border: solid 2px green;
+  border-radius: 12px;
+  color: green;
+  padding: 6px 2vw;
+  margin: 30px 0 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer > p, footer > a {
+  width: 33.333%;
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

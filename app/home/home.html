@@ -1,0 +1,23 @@
+<div class="home-page">
+
+ <div class="banner" align="center">
+   <div class="container">
+     <p ng-if="vm.validNumber(vm.number) === true" ng-bind="vm.percent"></p>
+     <p ng-if="vm.validNumber(vm.number) === false">Number is invalid.</p>
+   </div>
+ </div>
+
+ <div class="container page">
+   <div class="row" align="center">
+
+     <!-- Break Me -->
+     <button ng-click="vm.toggleValid(vm.validNumber(vm.number));" ng-if="vm.validNumber(vm.number) === true" class="btn btn-outline-primary btn-sm">
+       break me
+     </button>
+     <button ng-click="vm.toggleValid(vm.validNumber(vm.number));" ng-if="vm.validNumber(vm.number) === false" class="btn btn-outline-primary btn-sm">
+       fix me
+     </button>
+   </div>
+ </div>
+
+</div>
