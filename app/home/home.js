@@ -2,31 +2,30 @@
 
 angular.module('myApp.home', ['ngRoute'])
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/home', {
-    templateUrl: 'home/home.html',
-    controller: 'HomeCtrl',
-    controllerAs: 'vm'
-  });
-}])
 
-.controller('HomeCtrl', [function() {
-  this.randomFloat = function() {
+.controller('HomeCtrl', ['$scope', function($scope) {
+  $scope.randomFloat = function() {
      return parseFloat(Math.random().toFixed(2));
    };
 
-   this.number = this.randomFloat() * 100;
-   this.percent = this.number + "%";
+   $scope.number = $scope.randomFloat() * 100;
+   $scope.percent = $scope.number + "%";
 
-   this.validNumber = function(number) {
+   $scope.validNumber = function(number) {
      return (number >=0 && number <= 100);
    }
 
-   this.toggleValid = function(valid) {
+   $scope.toggleValid = function(valid) {
      if (valid) {
-       this.number = 200;
+       $scope.number = 200;
      } else {
-       this.number = this.randomFloat() * 100;
+       $scope.number = $scope.randomFloat() * 100;
      }
    }
-}]);
+}])
+
+.directive('home', function() {
+  return {
+    templateUrl: 'home/home.html',
+  };
+});

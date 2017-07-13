@@ -2,8 +2,8 @@
 
  <div class="banner" align="center">
    <div class="container">
-     <p ng-if="vm.validNumber(vm.number) === true" ng-bind="vm.percent"></p>
-     <p ng-if="vm.validNumber(vm.number) === false">Number is invalid.</p>
+     <p ng-if="validNumber(number) === true" ng-bind="percent"></p>
+     <p ng-if="validNumber(number) === false">Number is invalid.</p>
    </div>
  </div>
 
@@ -11,10 +11,10 @@
    <div class="row" align="center">
 
      <!-- Break Me -->
-     <button ng-click="vm.toggleValid(vm.validNumber(vm.number));" ng-if="vm.validNumber(vm.number) === true" class="btn btn-outline-primary btn-sm">
+     <button ng-click="toggleValid(validNumber(number));" ng-if="validNumber(number) === true" class="btn btn-outline-primary btn-sm">
        break me
      </button>
-     <button ng-click="vm.toggleValid(vm.validNumber(vm.number));" ng-if="vm.validNumber(vm.number) === false" class="btn btn-outline-primary btn-sm">
+     <button ng-click="toggleValid(validNumber(number));" ng-if="validNumber(number) === false" class="btn btn-outline-primary btn-sm">
        fix me
      </button>
      <p>I added this button to demonstrate the 'would be marked invalid' part of this assignment</p>
