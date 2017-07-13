@@ -2,7 +2,6 @@
 
 angular.module('myApp.home', ['ngRoute'])
 
-
 .controller('HomeCtrl', ['$scope', function($scope) {
   $scope.randomFloat = function() {
      return parseFloat(Math.random().toFixed(2));
